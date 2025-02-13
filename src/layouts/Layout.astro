@@ -1,4 +1,5 @@
 ---
+import MouseMoveEffect from "../components/MouseMoveEffect";
 import "../styles/global.css";
 ---
 
@@ -12,6 +13,7 @@ import "../styles/global.css";
     <title>Astro Basics</title>
   </head>
   <body class="bg-black">
+    <MouseMoveEffect client:load />
     <slot />
   </body>
 </html>
