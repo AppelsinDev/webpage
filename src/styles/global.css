@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", "sans-serif";
+  --font-geist: "Geist", "sans-serif";
+  --font-playfair-display: "Playfair Display", "serif";
+
+  --color-primary: oklch(66.38% 0.1112 228.34);
+  --color-secondary: oklch(50.98% 0.1236 260.84);
+
+  --inset-shadow-glass:
+    0px 32px 64px 0px rgba(55, 160, 201, 0.16) inset,
+    1px 1px 1px -0.5px rgba(55, 160, 201, 0.5) inset,
+    0px 0px 1px 0px rgba(255, 255, 255, 0.4) inset;
+}

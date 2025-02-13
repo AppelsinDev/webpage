@@ -1,0 +1,46 @@
+---
+const { title, description, isLeft } = Astro.props;
+---
+
+<div
+  class=`${isLeft ? 'justify-self-end' : 'justify-self-start'} w-full h-full max-w-[496px] p-8 bg-black rounded-lg border border-[#4e4e54] flex flex-col justify-start items-start gap-2 overflow-hidden`
+>
+  <div class="justify-start items-center gap-2.5 inline-flex">
+    <div data-svg-wrapper class="relative">
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+          stroke="white"
+          stroke-width="2.66667"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M4 12H28"
+          stroke="white"
+          stroke-width="2.66667"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M12 28V12"
+          stroke="white"
+          stroke-width="2.66667"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <div class="text-white text-base font-bold font-inter leading-normal">
+      {title}
+    </div>
+  </div>
+  <div
+    class="self-stretch text-zinc-400 text-base font-normal font-inter leading-normal"
+  >
+    {description}
+  </div>
+</div>

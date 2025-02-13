@@ -1,17 +1,61 @@
 ---
+import DetailCard from "../components/DetailCard.astro";
 import Hero from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import StepCard from "../components/StepCard.astro";
 import HeroSection from "../layouts/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
+import Section from "../layouts/Section.astro";
 ---
 
 <Layout>
-  <div class="w-full h-dvh flex flex-col">
+  <div class="w-full h-dvh flex flex-col z-1000">
     <Navbar />
     <main class="h-full">
       <HeroSection>
         <Hero />
       </HeroSection>
+      <Section id="solutions">
+        <SectionHeading
+          heading="Soluciones que se Adaptan a tu Negocio"
+          subheading="Diseñamos y desarrollamos software a la medida para empresas que buscan optimizar procesos, mejorar la experiencia de sus clientes y hacer crecer su negocio."
+        />
+        <div class="w-full max-w-5xl gap-8 grid grid-cols-1 md:grid-cols-2">
+          <DetailCard
+            title="CRM Personalizados"
+            description="lorem ipsum dolor sit amet consectetur. natoque etiam urna morbi feugiat pulvinar a curabitur."
+            isLeft
+          />
+          <DetailCard
+            title="Aplicaciones Móviles"
+            description="Lorem ipsum dolor sit amet consectetur"
+          />
+          <DetailCard
+            title="Plataformas de Customer Service"
+            description="lorem ipsum dolor sit amet consectetur. natoque etiam urna morbi feugiat pulvinar a curabitur."
+            isLeft
+          />
+          <DetailCard
+            title="Software de E-Learning"
+            description="lorem ipsum dolor sit amet consectetur. natoque etiam urna morbi feugiat pulvinar a curabitur."
+          />
+        </div>
+      </Section>
+      <Section id="methodology">
+        <SectionHeading heading="Metodología que Garantiza Resultados" />
+        <div class="w-full max-w-5xl gap-8 grid grid-cols-1 md:grid-cols-2">
+          <StepCard />
+        </div>
+      </Section>
+      <Section id="contact">
+        <SectionHeading
+          heading="Hablemos de tu Negocio"
+          subheading="Si buscas un equipo que realmente entienda tus necesidades y cree una solución a tu medida, estamos listos para escucharte."
+        />
+        <div class="w-full max-w-5xl gap-8 grid grid-cols-1 md:grid-cols-2">
+        </div>
+      </Section>
     </main>
   </div>
 </Layout>

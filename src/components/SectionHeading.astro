@@ -1,0 +1,16 @@
+---
+const { heading, subheading } = Astro.props;
+---
+
+<div class="max-w-5xl flex-col justify-start items-center gap-4 inline-flex">
+  <div
+    class="self-stretch text-center text-white text-5xl font-bold font-inter"
+  >
+    {heading}
+  </div>
+  <div
+    class="self-stretch text-center text-zinc-400 text-xl font-normal font-inter"
+  >
+    {subheading}
+  </div>
+</div>
