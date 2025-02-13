@@ -5,7 +5,7 @@ const { title, description, isLeft } = Astro.props;
 <div
   class=`${isLeft ? 'justify-self-end' : 'justify-self-start'} w-full h-full md:max-w-[496px] p-8 bg-black/50 backdrop-blur-lg rounded-lg border border-[#4e4e54] flex flex-col justify-start items-start gap-2 overflow-hidden`
 >
-  <div class="justify-start items-center gap-2.5 inline-flex">
+  <div class="inline-flex items-center justify-start gap-2.5">
     <div data-svg-wrapper class="relative">
       <svg
         width="32"
@@ -34,12 +34,12 @@ const { title, description, isLeft } = Astro.props;
           stroke-linejoin="round"></path>
       </svg>
     </div>
-    <div class="text-white text-base font-bold font-inter leading-normal">
+    <div class="font-inter text-base leading-normal font-bold text-white">
       {title}
     </div>
   </div>
   <div
-    class="self-stretch text-zinc-400 text-base font-normal font-inter leading-normal"
+    class="self-stretch font-inter text-base leading-normal font-normal text-zinc-400"
   >
     {description}
   </div>

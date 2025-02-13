@@ -10,7 +10,7 @@ import Section from "../layouts/Section.astro";
 ---
 
 <Layout>
-  <div class="w-full h-dvh flex flex-col z-1000">
+  <div class="z-1000 flex h-dvh w-full flex-col">
     <Navbar client:load />
     <main class="h-full">
       <HeroSection>
@@ -21,7 +21,7 @@ import Section from "../layouts/Section.astro";
           heading="Soluciones que se Adaptan a tu Negocio"
           subheading="Diseñamos y desarrollamos software a la medida para empresas que buscan optimizar procesos, mejorar la experiencia de sus clientes y hacer crecer su negocio."
         />
-        <div class="w-full max-w-5xl gap-8 grid grid-cols-1 md:grid-cols-2">
+        <div class="grid w-full max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
           <DetailCard
             title="CRM Personalizados"
             description="lorem ipsum dolor sit amet consectetur. natoque etiam urna morbi feugiat pulvinar a curabitur."
@@ -45,7 +45,7 @@ import Section from "../layouts/Section.astro";
       <Section id="methodology">
         <SectionHeading heading="Metodología que Garantiza Resultados" />
         <div
-          class="w-full max-w-5xl gap-8 grid grid-cols-1 md:grid-cols-2 overflow-x-scroll"
+          class="grid w-full max-w-5xl grid-cols-1 gap-8 overflow-x-scroll md:grid-cols-2"
         >
           <StepCard />
         </div>
@@ -55,7 +55,7 @@ import Section from "../layouts/Section.astro";
           heading="Hablemos de tu Negocio"
           subheading="Si buscas un equipo que realmente entienda tus necesidades y cree una solución a tu medida, estamos listos para escucharte."
         />
-        <div class="w-full max-w-5xl gap-8 grid grid-cols-1 md:grid-cols-2">
+        <div class="grid w-full max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
         </div>
       </Section>
     </main>
