@@ -1,7 +1,7 @@
 ---
 import DetailCard from "../components/DetailCard.astro";
 import Hero from "../components/Hero.astro";
-import Navbar from "../components/Navbar.astro";
+import { Navbar } from "../components/Navbar";
 import SectionHeading from "../components/SectionHeading.astro";
 import StepCard from "../components/StepCard.astro";
 import HeroSection from "../layouts/HeroSection.astro";
@@ -11,7 +11,7 @@ import Section from "../layouts/Section.astro";
 
 <Layout>
   <div class="w-full h-dvh flex flex-col z-1000">
-    <Navbar />
+    <Navbar client:load />
     <main class="h-full">
       <HeroSection>
         <Hero />
