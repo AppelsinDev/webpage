@@ -1,7 +1,17 @@
 ---
+import Hero from "../components/Hero.astro";
+import Navbar from "../components/Navbar.astro";
+import HeroSection from "../layouts/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div></div>
+  <div class="w-full h-dvh flex flex-col">
+    <Navbar />
+    <main class="h-full">
+      <HeroSection>
+        <Hero />
+      </HeroSection>
+    </main>
+  </div>
 </Layout>
